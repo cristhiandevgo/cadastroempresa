@@ -1,0 +1,18 @@
+body{
+  background-color: #DDD;
+}
+
+.geral{
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #CDCDCD;
+  background-color: #FFF;
+}
+
+.conteudo{
+ padding: 25px;
+}
+
+.rodape{
+  text-align: center;
+}
