@@ -15,7 +15,7 @@ class EmpresaDAO{
     while ($row = $stmt->fetchObject("EmpresaDAO")) {
       $resultado[] = $row;
     }
-    var_dump($resultado);
+    
     return $resultado;
   }
 

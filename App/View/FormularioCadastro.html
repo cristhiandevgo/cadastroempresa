@@ -2,6 +2,9 @@
   <div class="titulo-1">
     Cadastro de Empresa
   </div>
+  <div id="mensagem">
+
+  </div>
 
   <!-- Fieldset 1 -->
   <fieldset>
@@ -10,14 +13,14 @@
       CNPJ
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" required>
+      <input type="text" name="cnpj" id="cnpj" maxlength="14" required onchange="buscaCnpj()">
     </div>
 
     <div class="">
-      Razão Social
+      Nome Epresarial
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" required>
+      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" required>
     </div>
 
     <div class="">
@@ -93,7 +96,7 @@
 
   </fieldset>
 
-  <input type="checkbox" name="obs" id="obs" required>
+  <input type="checkbox" name="obs" id="obs">
   <label for="obs">Observações</label>
 
   <div class="">

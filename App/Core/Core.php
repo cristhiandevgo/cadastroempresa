@@ -14,7 +14,7 @@ class Core{
       $acao = $url["acao"];
     }
 
-    $pagina = ucfirst($url["pagina"]);
+    $pagina = ucfirst($pagina);
     $classe = $pagina."Controller";
 
     if(!class_exists($classe)){
@@ -24,8 +24,6 @@ class Core{
     if(!method_exists($classe, $acao)){
       $acao = "iniciar";
     }
-
-
 
     call_user_func_array(array(new $classe, $acao), array());
 
