@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 09-Jun-2020 às 05:16
+-- Tempo de geração: 09-Jun-2020 às 16:07
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.6
 
@@ -31,7 +31,7 @@ CREATE TABLE `Empresa` (
   `idEmpresa` int(11) NOT NULL,
   `nomeEmpresarial` varchar(255) NOT NULL,
   `nomeFantasia` varchar(255) NOT NULL,
-  `telefone` varchar(15) NOT NULL,
+  `telefone` varchar(60) NOT NULL,
   `cnae` varchar(9) NOT NULL,
   `cnpj` varchar(18) NOT NULL,
   `logradouro` varchar(255) NOT NULL,
@@ -48,7 +48,8 @@ CREATE TABLE `Empresa` (
 --
 
 INSERT INTO `Empresa` (`idEmpresa`, `nomeEmpresarial`, `nomeFantasia`, `telefone`, `cnae`, `cnpj`, `logradouro`, `numero`, `bairro`, `cep`, `estado`, `cidade`, `obs`) VALUES
-(35, 'MARIA APARECIDA DE SOUZA CABRAL 39559807153', 'CIDA CABELEIREIRA', '(66) 9207-5863', 'undefined', '17965395000160', 'AV GABRIEL FERREIRA', '797', 'VILA SANTO ANTONIO', '78.600-000', 'MT', 'BARRA DO GARCAS', 'Obs');
+(35, 'MARIA APARECIDA DE SOUZA CABRAL 39559807153', 'CIDA CABELEIREIRA', '(66) 9207-5863', 'undefined', '17965395000160', 'AV GABRIEL FERREIRA', '797', 'VILA SANTO ANTONIO', '78.600-000', 'MT', 'BARRA DO GARCAS', 'Obs'),
+(45, 'GLOBO COMUNICACAO E PARTICIPACOES S/A', 'TV/REDE/CANAIS/G2C+GLOBO SOMLIVRE GLOBO.COM GLOBOPLAY', '(21) 2155-4551/ (21) 2155-4552', 'undefined', '27865757000102', 'R LOPES QUINTAS', '303', 'JARDIM BOTANICO', '22.460-901', 'RJ', 'RIO DE JANEIRO', '');
 
 --
 -- Índices para tabelas despejadas
@@ -68,7 +69,7 @@ ALTER TABLE `Empresa`
 -- AUTO_INCREMENT de tabela `Empresa`
 --
 ALTER TABLE `Empresa`
-  MODIFY `idEmpresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `idEmpresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

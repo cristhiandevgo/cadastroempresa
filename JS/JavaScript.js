@@ -15,6 +15,8 @@ function buscaCnpj(){
       document.getElementById("cep").value = obj.cep;
       document.getElementById("cidade").value = obj.municipio;
       document.getElementById("estado").value = obj.uf;
+
+      document.getElementById("mensagem").innerHTML = "";
     }else{
       document.getElementById("mensagem").innerHTML = "Dados não encontrados!";
       document.getElementById("cnpj").value = "";
