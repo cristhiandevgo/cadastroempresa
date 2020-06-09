@@ -85,9 +85,9 @@ class EmpresaController{
   }
 
   public function atualizar(){
-
     if($_POST){
       $empresa = new Empresa();
+      $empresa->setId($_POST["idEmpresa"]);
       $empresa->setNomeEmpresarial($_POST["nomeEmpresarial"]);
       $empresa->setNomeFantasia($_POST["nomeFantasia"]);
       $empresa->setTelefone($_POST["telefone"]);
@@ -106,7 +106,7 @@ class EmpresaController{
       }
       $empresa->setObs($obs);
       $empresaDao = new EmpresaDAO();
-      $empresaDao->create($empresa);
+      $empresaDao->update($empresa);
 
       echo "<script>alert('Alteração realizada com Sucesso!');location.href='index.php?pagina=empresa';</script>";
     }else{

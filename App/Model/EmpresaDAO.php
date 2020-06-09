@@ -55,19 +55,19 @@ class EmpresaDAO{
   public function update(Empresa $e){
     $sql = "UPDATE Empresa SET nomeEmpresarial=?, nomeFantasia=?, telefone=?, cnae=?, cnpj=?, logradouro=?, numero=?, bairro=?, cep=?, estado=?, cidade=?, obs=? WHERE idEmpresa=?";
     $stmt = Connection::getConn()->prepare($sql);
-    $stmt->bindValue(1, $e->getNomeEmpresarial);
-    $stmt->bindValue(2, $e->getNomeFantasia);
-    $stmt->bindValue(3, $e->getTelefone);
-    $stmt->bindValue(4, $e->getCnae);
-    $stmt->bindValue(5, $e->getCnpj);
-    $stmt->bindValue(6, $e->getLogradouro);
-    $stmt->bindValue(7, $e->getNumero);
-    $stmt->bindValue(8, $e->getBairro);
-    $stmt->bindValue(9, $e->getCep);
-    $stmt->bindValue(10, $e->getEstado);
-    $stmt->bindValue(11, $e->getCidade);
-    $stmt->bindValue(12, $e->getObs);
-    $stmt->bindValue(13, $e->getId);
+    $stmt->bindValue(1, $e->getNomeEmpresarial());
+    $stmt->bindValue(2, $e->getNomeFantasia());
+    $stmt->bindValue(3, $e->getTelefone());
+    $stmt->bindValue(4, $e->getCnae());
+    $stmt->bindValue(5, $e->getCnpj());
+    $stmt->bindValue(6, $e->getLogradouro());
+    $stmt->bindValue(7, $e->getNumero());
+    $stmt->bindValue(8, $e->getBairro());
+    $stmt->bindValue(9, $e->getCep());
+    $stmt->bindValue(10, $e->getEstado());
+    $stmt->bindValue(11, $e->getCidade());
+    $stmt->bindValue(12, $e->getObs());
+    $stmt->bindValue(13, $e->getId());
     $stmt->execute();
   }
 
