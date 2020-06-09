@@ -1,6 +1,6 @@
-<form class="" action="?pagina=empresa&acao=cadastrar" method="post">
+<form class="" action="?pagina=empresa&acao=atualizar" method="post">
   <div class="titulo-1">
-    Cadastro de Empresa
+    Alteração de dados Empresa
   </div>
   <div id="mensagem">
 
@@ -13,35 +13,35 @@
       CNPJ
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" maxlength="14" required onchange="buscaCnpj()">
+      <input type="text" name="cnpj" id="cnpj" maxlength="14" value="{{empresa.cnpj}}" required onchange="buscaCnpj()">
     </div>
 
     <div class="">
       Nome Epresarial
     </div>
     <div class="">
-      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" required>
+      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" value="{{empresa.nomeEmpresarial}}" required>
     </div>
 
     <div class="">
       Nome Fantasia
     </div>
     <div class="">
-      <input type="text" name="nomeFantasia" id="nomeFantasia" required>
+      <input type="text" name="nomeFantasia" id="nomeFantasia" value="{{empresa.nomeFantasia}}" required>
     </div>
 
     <div class="">
       Telefone
     </div>
     <div class="">
-      <input type="text" name="telefone" id="telefone" required>
+      <input type="text" name="telefone" id="telefone" value="{{empresa.telefone}}" required>
     </div>
 
     <div class="">
       CNAE
     </div>
     <div class="">
-      <input type="text" name="cnae" id="cnae" required>
+      <input type="text" name="cnae" id="cnae" value="{{empresa.cnae}}" required>
     </div>
 
   </fieldset>
@@ -56,42 +56,42 @@
       Logradouro
     </div>
     <div class="">
-      <input type="text" name="logradouro" id="logradouro" required>
+      <input type="text" name="logradouro" id="logradouro" value="{{empresa.logradouro}}" required>
     </div>
 
     <div class="">
       Número
     </div>
     <div class="">
-      <input type="text" name="numero" id="numero" required>
+      <input type="text" name="numero" id="numero" value="{{empresa.numero}}" required>
     </div>
 
     <div class="">
       Bairro
     </div>
     <div class="">
-      <input type="text" name="bairro" id="bairro" required>
+      <input type="text" name="bairro" id="bairro" value="{{empresa.bairro}}" required>
     </div>
 
     <div class="">
       CEP
     </div>
     <div class="">
-      <input type="text" name="cep" id="cep" required>
+      <input type="text" name="cep" id="cep" value="{{empresa.cep}}" required>
     </div>
 
     <div class="">
       Cidade
     </div>
     <div class="">
-      <input type="text" name="cidade" id="cidade" required>
+      <input type="text" name="cidade" id="cidade" value="{{empresa.cidade}}" required>
     </div>
 
     <div class="">
       Estado
     </div>
     <div class="">
-      <input type="text" name="estado" id="estado" required>
+      <input type="text" name="estado" id="estado" value="{{empresa.estado}}" required>
     </div>
 
   </fieldset>
@@ -103,7 +103,11 @@
     <input type="checkbox" name="obs" id="obs" onclick="addObs()">
     <label for="obs">Usar Observação</label>
     <div id="obsDiv">
-      
+
+      {% if empresa.obs %}
+        <textarea name="obsTexto" id="obsTexto" rows="8" cols="80">{{empresa.obs}}</textarea>
+      {%endif%}
+
     </div>
   </fieldset>
 
