@@ -2,6 +2,11 @@
 
 class Core{
   public function iniciar($url){
+    $id["id"] = "";
+    if(isset($url["id"])){
+      $id["id"] = $url["id"];
+    }
+
     if(!isset($url["pagina"])){
       $pagina = "home";
     }else{
@@ -25,7 +30,7 @@ class Core{
       $acao = "iniciar";
     }
 
-    call_user_func_array(array(new $classe, $acao), array());
+    call_user_func_array(array(new $classe, $acao), $id);
 
   }
 }

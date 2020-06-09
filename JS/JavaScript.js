@@ -25,7 +25,7 @@ function buscaCnpj(){
 function addObs(){
 
   if(!document.getElementById("obsTexto")){
-    document.getElementById("obsDiv").innerHTML = '<textarea name="name" name="obsTexto" id="obsTexto" rows="8" cols="80"></textarea>';
+    document.getElementById("obsDiv").innerHTML = '<textarea name="obsTexto" id="obsTexto" rows="8" cols="80"></textarea>';
   }else{
     document.getElementById("obsDiv").innerHTML = '';
   }

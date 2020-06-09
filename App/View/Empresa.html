@@ -3,4 +3,44 @@
 </div>
 <div class="">
   <input type="button" name="cadastrar" value="cadastrar" value="Cadastrar" onclick='location.href="?pagina=empresa&acao=formularioCadastro"'>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>Nome Empresarial</td>
+        <td>Nome Fantasia</td>
+        <td>Telefone</td>
+        <td>CNAE</td>
+        <td>CNPJ</td>
+        <td>Logradouro</td>
+        <td>Numero</td>
+        <td>Bairro</td>
+        <td>CEP</td>
+        <td>Estado</td>
+        <td>Cidade</td>
+        <td>OBS</td>
+        <td colspan="2"></td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for empresa in empresa %}
+      <tr>
+        <td>{{empresa.nomeEmpresarial}}</td>
+        <td>{{empresa.nomeFantasia}}</td>
+        <td>{{empresa.telefone}}</td>
+        <td>{{empresa.cnae}}</td>
+        <td>{{empresa.cnpj}}</td>
+        <td>{{empresa.logradouro}}</td>
+        <td>{{empresa.numero}}</td>
+        <td>{{empresa.bairro}}</td>
+        <td>{{empresa.cep}}</td>
+        <td>{{empresa.estado}}</td>
+        <td>{{empresa.cidade}}</td>
+        <td>{{empresa.obs}}</td>
+        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">Alterar</a></td>
+        <td><a href="?pagina=empresa&acao=deletar&id={{empresa.idEmpresa}}">Deletar</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+  </table>
 </div>
