@@ -18,4 +18,5 @@
    3.1 Executar no terminal na pasta principal do projeto: composer require twig/twig
 
  4. Instalar o Banco de Dados: "cadastroempresa.sql", armazenado na pasta principal do projeto.
- 5. Acessar o Sistema: localhost/sistemadepedidos/
+ 5. Acessar o Sistema.
+ 
