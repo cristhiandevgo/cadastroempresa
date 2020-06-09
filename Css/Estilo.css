@@ -5,14 +5,95 @@ body{
 .geral{
   max-width: 1000px;
   margin: 0 auto;
-  border: 1px solid #CDCDCD;
   background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px #777;
+}
+
+.topo{
+  border-bottom: 2px solid #34b7eb;
 }
 
 .conteudo{
- padding: 25px;
+  font-size: 16px;
+  text-align: justify;
+  padding: 25px;
+  align-items: center;
 }
 
 .rodape{
+  font-size: 20px;
   text-align: center;
+  padding: 25px;
+  color: #34b7eb;
+  border-top: 2px solid #34b7eb;
+}
+
+.titulo-1{
+  font-size: 25px;
+  color: #34b7eb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: #444;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+input[type=text],[type=tel],[type=date]{
+  border: 2px solid #DDD;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type=submit],[type=button]{
+  background-color: #34b7eb;
+  border: 1px solid #34b7eb;;
+  color: #FFF;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+input[type=submit],[type=button]:hover{
+  box-shadow: 0px 0px 10px 0px #777;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  height: 40px;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  text-align: center;
+}
+
+table {
+  text-align: left;
+  border: 1px solid #CDCDCD;
+  max-width: 600px;
+  min-width: 500px;
+  font-size: 14px;
+}
+
+td{
+  max-width: 60px;
+  min-width: 60px;
+  word-wrap: break-word;
+  border: 1px solid #CDCDCD;
 }
