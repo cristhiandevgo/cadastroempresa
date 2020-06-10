@@ -14,35 +14,35 @@
       CNPJ
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" maxlength="14" value="{{empresa.cnpj}}" required onchange="buscaCnpj()">
+      <input type="text" name="cnpj" id="cnpj" class="form-control" maxlength="14" value="{{empresa.cnpj}}" required onchange="buscaCnpj()">
     </div>
 
     <div class="">
       Nome Epresarial
     </div>
     <div class="">
-      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" value="{{empresa.nomeEmpresarial}}" required>
+      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" class="form-control" maxlength="255" value="{{empresa.nomeEmpresarial}}" required>
     </div>
 
     <div class="">
       Nome Fantasia
     </div>
     <div class="">
-      <input type="text" name="nomeFantasia" id="nomeFantasia" value="{{empresa.nomeFantasia}}" required>
+      <input type="text" name="nomeFantasia" id="nomeFantasia" class="form-control" maxlength="255" value="{{empresa.nomeFantasia}}" required>
     </div>
 
     <div class="">
       Telefone
     </div>
     <div class="">
-      <input type="text" name="telefone" id="telefone" value="{{empresa.telefone}}" required>
+      <input type="text" name="telefone" id="telefone" class="form-control" maxlength="60" value="{{empresa.telefone}}" required>
     </div>
 
     <div class="">
       CNAE
     </div>
     <div class="">
-      <input type="text" name="cnae" id="cnae" value="{{empresa.cnae}}" required>
+      <input type="text" name="cnae" id="cnae" class="form-control" maxlength="9" value="{{empresa.cnae}}" required>
     </div>
 
   </fieldset>
@@ -57,42 +57,42 @@
       Logradouro
     </div>
     <div class="">
-      <input type="text" name="logradouro" id="logradouro" value="{{empresa.logradouro}}" required>
+      <input type="text" name="logradouro" id="logradouro" class="form-control" maxlength="255" value="{{empresa.logradouro}}" required>
     </div>
 
     <div class="">
       Número
     </div>
     <div class="">
-      <input type="text" name="numero" id="numero" value="{{empresa.numero}}" required>
+      <input type="text" name="numero" id="numero" class="form-control" maxlength="11" value="{{empresa.numero}}" required>
     </div>
 
     <div class="">
       Bairro
     </div>
     <div class="">
-      <input type="text" name="bairro" id="bairro" value="{{empresa.bairro}}" required>
+      <input type="text" name="bairro" id="bairro" class="form-control" maxlength="255" value="{{empresa.bairro}}" required>
     </div>
 
     <div class="">
       CEP
     </div>
     <div class="">
-      <input type="text" name="cep" id="cep" value="{{empresa.cep}}" required>
+      <input type="text" name="cep" id="cep" class="form-control" maxlength="10" value="{{empresa.cep}}" required>
     </div>
 
     <div class="">
       Cidade
     </div>
     <div class="">
-      <input type="text" name="cidade" id="cidade" value="{{empresa.cidade}}" required>
+      <input type="text" name="cidade" id="cidade" class="form-control" maxlength="100" value="{{empresa.cidade}}" required>
     </div>
 
     <div class="">
       Estado
     </div>
     <div class="">
-      <input type="text" name="estado" id="estado" value="{{empresa.estado}}" required>
+      <input type="text" name="estado" id="estado" class="form-control" maxlength="2" value="{{empresa.estado}}" required>
     </div>
 
   </fieldset>
@@ -106,7 +106,7 @@
     <div id="obsDiv">
 
       {% if empresa.obs %}
-        <textarea name="obsTexto" id="obsTexto" rows="8" cols="80">{{empresa.obs}}</textarea>
+        <textarea name="obsTexto" id="obsTexto" class="form-control" rows="8" cols="80">{{empresa.obs}}</textarea>
       {%endif%}
 
     </div>
@@ -116,6 +116,6 @@
 
   <br>
   <div class="">
-    <input type="submit" value="Cadastrar">
+    <input type="submit" class="btn btn-primary" value="Cadastrar">
   </div>
 </form>

@@ -2,47 +2,47 @@
   Empresas
 </div>
 <div class="">
-  <input type="button" name="cadastrar" id="cadastrar" value="Nova Empresa" onclick='location.href="?pagina=empresa&acao=formularioCadastro"'>
+  <input type="button" class="btn btn-primary" name="cadastrar" id="cadastrar" value="Nova Empresa" onclick='location.href="?pagina=empresa&acao=formularioCadastro"'>
   <br>
   <br>
-  <table border="1">
-    <thead>
-      <tr>
-        <td>Nome Empresarial</td>
-        <td>Nome Fantasia</td>
-        <td>Telefone</td>
-        <td>CNAE</td>
-        <td>CNPJ</td>
-        <td>Logradouro</td>
-        <td>Numero</td>
-        <td>Bairro</td>
-        <td>CEP</td>
-        <td>Estado</td>
-        <td>Cidade</td>
-        <td>OBS</td>
-        <td colspan="2"></td>
-      </tr>
-    </thead>
-    <tbody>
-      {% for empresa in empresa %}
-      <tr>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.nomeEmpresarial}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.nomeFantasia}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.telefone}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cnae}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cnpj}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.logradouro}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.numero}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.bairro}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cep}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.estado}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cidade}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.obs}}</a></td>
-        <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">Alterar</a></td>
-        <td><a href="?pagina=empresa&acao=deletar&id={{empresa.idEmpresa}}">Deletar</a></td>
-      </tr>
-      {% endfor %}
-    </tbody>
 
-  </table>
+  <table class="table-striped table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Nome Empresarial</th>
+      <th scope="col">Nome Fantasia</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">CNAE</th>
+      <th scope="col">CNPJ</th>
+      <th scope="col">Logradouro</th>
+      <th scope="col">Número</th>
+      <th scope="col">Bairro</th>
+      <th scope="col">CEP</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">OBS</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for empresa in empresa %}
+    <tr>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.nomeEmpresarial}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.nomeFantasia}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.telefone}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cnae}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cnpj}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.logradouro}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.numero}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.bairro}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cep}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.estado}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.cidade}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">{{empresa.obs}}</a></td>
+      <td><a href="?pagina=empresa&acao=formularioAtualizacao&id={{empresa.idEmpresa}}">Alterar</a></td>
+      <td><a href="?pagina=empresa&acao=deletar&id={{empresa.idEmpresa}}">Deletar</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
 </div>

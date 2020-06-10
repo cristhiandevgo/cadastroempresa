@@ -1,5 +1,5 @@
 body{
-  background-color: #DDD;
+  background-color: #DDD !important;
 }
 
 .geral{
@@ -12,6 +12,7 @@ body{
 
 .topo{
   border-bottom: 2px solid #34b7eb;
+  height: 80px;
 }
 
 .conteudo{
@@ -51,55 +52,24 @@ a:hover{
   text-decoration: underline;
 }
 
-input[type=text],[type=tel],[type=date]{
-  border: 2px solid #DDD;
-  border-radius: 5px;
-  padding: 5px;
-  width: 96%;
-}
-
-input[type=submit],[type=button]{
-  background-color: #34b7eb;
-  border: 1px solid #34b7eb;;
-  color: #FFF;
-  text-align: center;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 14px;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-
-input[type=submit],[type=button]:hover{
-  box-shadow: 0px 0px 10px 0px #777;
-}
-
 .menu {
   display: flex;
   align-items: center;
   max-width: 1000px;
-  height: 40px;
   list-style: none;
   padding-top: 30px;
+  font-weight: bold;
 }
 
 .menu li {
   width: 125px;
-  height: 50px;
+  height: 40px;
   text-align: center;
-}
-
-table {
-  text-align: left;
-  border: 1px solid #CDCDCD;
-  max-width: 600px;
-  min-width: 500px;
-  font-size: 14px;
 }
 
 td{
   max-width: 60px;
   min-width: 60px;
   word-wrap: break-word;
-  border: 1px solid #CDCDCD;
+
 }
