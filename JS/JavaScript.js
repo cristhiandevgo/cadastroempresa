@@ -3,12 +3,14 @@ function buscaCnpj(){
   $.get("App/APIS/cnpj/consulta.php?cnpj="+cnpj, function(data, status){
     var data2 = data;
     var obj = jQuery.parseJSON(data);
+    console.log();
+    
 
     if(obj.status == "OK"){
       document.getElementById("nomeEmpresarial").value = obj.nome;
       document.getElementById("nomeFantasia").value = obj.fantasia;
       document.getElementById("telefone").value = obj.telefone;
-      document.getElementById("cnae").value = obj.text;
+      document.getElementById("cnae").value = obj.atividade_principal[0].code+" - "+obj.atividade_principal[0].text;
       document.getElementById("logradouro").value = obj.logradouro;
       document.getElementById("numero").value = obj.numero;
       document.getElementById("bairro").value = obj.bairro;
