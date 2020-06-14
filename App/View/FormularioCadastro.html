@@ -13,14 +13,14 @@
       CNPJ
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" maxlength="14" class="form-control" required onratechange="buscaCnpj()" onchange="buscaCnpj();">
+      <input type="text" name="cnpj" id="cnpj" maxlength="18" class="form-control" onkeydown="return formataCnpj();" onkeypress="return formataCnpj();" onblur="return formataCnpj();" required>
     </div>
 
     <div class="">
       Nome Epresarial
     </div>
     <div class="">
-      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" class="form-control" maxlength="255" onfocus="buscaCnpj();" required>
+      <input type="text" name="nomeEmpresarial" id="nomeEmpresarial" class="form-control" maxlength="255" required>
     </div>
 
     <div class="">

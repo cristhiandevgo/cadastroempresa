@@ -1,10 +1,17 @@
+
+function formataCnpj(){
+  var cnpjl = $("#cnpj").val().length;
+  VMasker(document.querySelector("#cnpj")).maskPattern("99.999.999/9999-99");
+
+  if(cnpjl == 18){
+    buscaCnpj();
+  }
+}
+
 function buscaCnpj(){
-  var cnpj = document.getElementById("cnpj").value;
+  var cnpj = VMasker.toNumber($("#cnpj").val());
   $.get("App/APIS/cnpj/consulta.php?cnpj="+cnpj, function(data, status){
-    var data2 = data;
     var obj = jQuery.parseJSON(data);
-    console.log();
-    
 
     if(obj.status == "OK"){
       document.getElementById("nomeEmpresarial").value = obj.nome;
