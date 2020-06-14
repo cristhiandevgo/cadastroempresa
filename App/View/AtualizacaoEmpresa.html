@@ -14,7 +14,7 @@
       CNPJ
     </div>
     <div class="">
-      <input type="text" name="cnpj" id="cnpj" class="form-control" maxlength="14" value="{{empresa.cnpj}}" required onchange="buscaCnpj()">
+      <input type="text" name="cnpj" id="cnpj" class="form-control" maxlength="18" value="{{empresa.cnpj}}" onkeydown="return formataCnpj();" onkeypress="return formataCnpj();" onblur="return formataCnpj();" required>
     </div>
 
     <div class="">
