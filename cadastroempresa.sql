@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `cadastroempresa`
 --
-
+CREATE DATABASE cadastroempresa;
 -- --------------------------------------------------------
 
 --
@@ -48,8 +48,8 @@ CREATE TABLE `Empresa` (
 --
 
 INSERT INTO `Empresa` (`idEmpresa`, `nomeEmpresarial`, `nomeFantasia`, `telefone`, `cnae`, `cnpj`, `logradouro`, `numero`, `bairro`, `cep`, `estado`, `cidade`, `obs`) VALUES
-(45, 'GLOBO COMUNICACAO E PARTICIPACOES S/A', 'TV/REDE/CANAIS/G2C+GLOBO SOMLIVRE GLOBO.COM GLOBOPLAY', '(21) 2155-4551/ (21) 2155-4552', 'undefined', '27865757000102', 'R LOPES QUINTAS', '303', 'JARDIM BOTANICO', '22.460-901', 'RJ', 'RIO DE JANEIRO', ''),
-(49, 'MARIA APARECIDA DE SOUZA CABRAL 39559807153', 'CIDA CABELEIREIRA', '(66) 9207-5863', '96.02-5-01 - Cabeleireiros, manicure e pedicure', '17965395000160', 'AV GABRIEL FERREIRA', '797', 'VILA SANTO ANTONIO', '78.600-000', 'MT', 'BARRA DO GARCAS', '');
+(45, 'GLOBO COMUNICACAO E PARTICIPACOES S/A', 'TV/REDE/CANAIS/G2C+GLOBO SOMLIVRE GLOBO.COM GLOBOPLAY', '(21) 2155-4551/ (21) 2155-4552', 'undefined', '27.865.757/0001-02', 'R LOPES QUINTAS', '303', 'JARDIM BOTANICO', '22.460-901', 'RJ', 'RIO DE JANEIRO', ''),
+(49, 'MARIA APARECIDA DE SOUZA CABRAL 39559807153', 'CIDA CABELEIREIRA', '(66) 9207-5863', '96.02-5-01 - Cabeleireiros, manicure e pedicure', '17.965.395/0001-60', 'AV GABRIEL FERREIRA', '797', 'VILA SANTO ANTONIO', '78.600-000', 'MT', 'BARRA DO GARCAS', '');
 
 --
 -- Índices de tabelas apagadas
